@@ -1,5 +1,7 @@
 'use client';
 import Image from 'next/image';
+import Chat from '@/images/chat.jpg';
+import RightClick from '@/images/right-click.jpg';
 
 export default function Page() {
     return (
@@ -29,7 +31,7 @@ export default function Page() {
                         </p>
                         <div className="relative w-full h-[450px] rounded-lg overflow-hidden">
                             <Image
-                                src="/images/chat.jpg"
+                                src={Chat}
                                 alt="AI Chat"
                                 fill
                                 className="object-cover transition-opacity duration-200"
@@ -48,7 +50,7 @@ export default function Page() {
                         </p>
                         <div className="relative w-full h-[450px] rounded-lg overflow-hidden">
                             <Image
-                                src="/images/right-click.jpg"
+                                src={RightClick}
                                 alt="Code Link"
                                 fill
                                 className="object-cover transition-opacity duration-200"
